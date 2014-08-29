@@ -1,0 +1,1 @@
+Folder with shell scripts for building, testing, cleaning and deplying.

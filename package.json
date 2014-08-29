@@ -1,0 +1,42 @@
+{
+  "name": "audioact",
+  "version": "0.0.1",
+  "description": "Audio Podcast Terminal App",
+  "repository" : { 
+    "type" : "git",
+    "url" : "http://github.com/enaqx/audioact"
+  },
+  "main": "./server.js",
+  "browser": "./client.js",
+  "browserify": {
+    "transform": [
+      ["reactify", {"harmony": true}]
+    ]
+  },
+  "dependencies": {
+    "react": "~0.10.0",
+    "react-async": "~0.9.1",
+    "react-router-component": "~0.18.2",
+    "express": "~4.1.1",
+    "node-jsx": "~0.10.0",
+    "superagent": "~0.18.0",
+    "fibers": "~1.0.1"
+  },
+  "devDependencies": {
+    "reactify": "~0.13.1",
+    "envify": "~1.2.0",
+    "browserify": "~3.44.2",
+    "connect-browserify": "~2.0.1",
+    "uglify-js": "~2.4.13",
+    "supervisor": "~0.6.0"
+  },
+  "scripts": {
+    "test": "./scripts/test.sh",
+    "start": "./scripts/start.sh",
+    "build": "./scripts/build.sh",
+    "production": "./scripts/production.sh",
+    "clean": "./scripts/clean.sh"
+  },
+  "author": "Nick Raienko",
+  "license": "MIT"
+}
