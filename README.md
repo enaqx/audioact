@@ -1,6 +1,6 @@
 ## AudioAct
 
-Online Audio Podacst Termianal App
+Online Audio Podcast Termianal App
 
 ### Tools used:
  * [react][] for UI components
