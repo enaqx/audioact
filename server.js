@@ -1,3 +1,5 @@
+/* HTTP server */
+
 'use strict';
 
 var path        = require('path');
@@ -8,7 +10,9 @@ var ReactAsync  = require('react-async');
 var nodejsx     = require('node-jsx').install();
 var App         = require('./app/app.js');
 
+/* Server properties */
 var development = process.env.NODE_ENV !== 'production';
+var PORT = 3001;
 
 function renderApp(req, res, next) {
   var path = url.parse(req.url).pathname;
@@ -44,6 +48,6 @@ app
   .use('/assets', express.static(path.join(__dirname, 'assets')))
   .use('/api', api)
   .use(renderApp)
-  .listen(3000, function() {
-    console.log('Point your browser at http://localhost:3000');
+  .listen(PORT, function() {
+    console.log('Point your browser at http://localhost:%d', PORT);
   });
