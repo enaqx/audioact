@@ -19,7 +19,7 @@ var MainPage = React.createClass({
   render: function() {
     return (
       <div className="MainPage">
-        <h1>Hello, anonymous!</h1>
+        <h1>AudioAct</h1>
         <p><Link href="/users/doe">Login</Link></p>
       </div>
     );
